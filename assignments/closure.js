@@ -1,6 +1,20 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function parent(){
+  const familyName = "Arthur"
 
+  function child(){
+
+    console.log(`child shares the same familyName ${familyName}`)
+
+    function grandchild(){
+      console.log(`grandchild shares the same familyName ${familyName}`)
+    }
+    grandchild();
+  }
+  child()
+}
+parent()
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
