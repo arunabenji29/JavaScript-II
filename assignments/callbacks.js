@@ -73,9 +73,20 @@ contains('Pencil',items,function(str,arr){
 });
 
 /* STRETCH PROBLEM */
-
+let arrayOfDuplicates = [4,5,6,7,3,4,5,4,3];
+let realArray = []
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+  return cb(array)
 }
+
+removeDuplicates(arrayOfDuplicates,arr => {
+  arrayOfDuplicates.forEach(element => {
+                  if(realArray.indexOf(element)=== -1){
+                      realArray.push(element)
+                    } 
+                    });
+  return realArray
+});
